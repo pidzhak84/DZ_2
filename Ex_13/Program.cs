@@ -10,13 +10,18 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int digit3 = 0;
 
-if (number > 999)
+if (number < 100)
+
 {
-    number = number / 10;
+    Console.WriteLine("Нет третьей цифры");
 }
 else
 {
-    digit3 = number % 10;
+    while (number > 1000)
+    {
+        number = number / 10;
+    }
+     digit3 = number % 10;
 }
 
 System.Console.WriteLine(digit3);
