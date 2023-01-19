@@ -7,10 +7,8 @@
 */
 
 Console.Clear();
-
 Console.Write("Введите цифру от 1 до 7, обозначающую день недели - ");
 int day = int.Parse(Console.ReadLine()!);
-
 if (day > 5)
 {
     Console.Write("да");
